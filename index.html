@@ -509,7 +509,7 @@ order: 2;
 </head>
 
 <body>
-  <a-scene mindar-image="imageTargetSrc: ./target/demo.mind; filterMinCF:0.00001; filterBeta: 100" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" inspector="" keyboard-shortcuts="" screenshot="" >
+  <a-scene mindar-image="imageTargetSrc: ./target/demo.mind; filterMinCF:0.0001; filterBeta: 50" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" inspector="" keyboard-shortcuts="" screenshot="" >
     <a-assets>
 <a-asset-item id="leaves" src="./target/models/model1/Bispecific antibody.gltf"></a-asset-item>
 <a-asset-item id="corals" src="./target/models/model2/Bispecific antibody.gltf"></a-asset-item>
@@ -519,13 +519,13 @@ order: 2;
     <a-camera position="0 0 0" look-controls="enabled: false" camera="" rotation="" wasd-controls=""></a-camera>
 
     <a-entity mindar-image-target="targetIndex: 0">
-<a-gltf-model rotation="90 0 0 " position="0 -0.45 0" scale="1 1 1" src="#corals" animation-mixer="" gltf-model="">
+<a-gltf-model rotation="90 0 0 " position="0 -0.25 0" scale="0.9 0.9 0.9" src="#corals" animation-mixer="" gltf-model="">
     </a-gltf-model></a-entity>
     <a-entity mindar-image-target="targetIndex: 1">
-<a-gltf-model rotation="90 0 0 " position="0 -0.45 0" scale="1 1 1" src="#leaves" animation-mixer="" gltf-model="">
+<a-gltf-model rotation="90 0 0 " position="0 -0.25 0" scale="0.9 0.9 0.9" src="#leaves" animation-mixer="" gltf-model="">
     </a-gltf-model></a-entity>
     <a-entity mindar-image-target="targetIndex: 2">
-    <a-gltf-model rotation="90 0 0 " position="0 -0.45 0" scale="0.1 0.1 0.1" src="#stones" animation-mixer="" gltf-model="">
+    <a-gltf-model rotation="90 0 0 " position="0 -0.25 0" scale="0.9 0.9 0.9" src="#stones" animation-mixer="" gltf-model="">
     </a-gltf-model></a-entity>
   <canvas class="a-canvas" data-aframe-canvas="true" data-engine="three.js r147" width="1920" height="893"></canvas><div class="a-loader-title" style="display: none;"></div><a-entity light="" data-aframe-default-light="" aframe-injected=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected=""></a-entity></a-scene>
 
